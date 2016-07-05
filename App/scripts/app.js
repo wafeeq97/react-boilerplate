@@ -1,6 +1,6 @@
 import React from 'react';
-import Router from 'react-router';
-var {DefaultRoute, Route} = Router;
+import ReactDOM from 'react-dom';
+import { IndexRoute, Router, Route } from 'react-router'
 
 import AppHeader from './Components/Header';
 
@@ -9,10 +9,10 @@ import Home from './Views/Home';
 import About from './Views/About';
 
 var routes = (
-  <Route name="app" path="/" handler={AppHeader}>
-    <Route name="about" handler={About}/>
-    <DefaultRoute handler={Home}/>
+  <Route path="/" component={AppHeader}>
+    <IndexRoute component={Home} />
+    <Route path="about" component={About}/>
   </Route>
 );
 
-Router.run(routes, (Handler) => React.render(<Handler /> , document.body));
+ReactDOM.render(<Router>{routes}</Router>, document.body);

@@ -1,5 +1,5 @@
 import React from 'react';
-var {NavItem} = require('react-bootstrap');
+var { NavItem } = require('react-bootstrap');
 
 var MenuItem = React.createClass({
     render: function() {

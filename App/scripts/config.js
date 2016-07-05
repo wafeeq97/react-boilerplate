@@ -16,13 +16,32 @@ var CONFIG = {
             }
         ]
     },
+    
     home: {
         header: "Hello World!",
         content: "This is Mo's World!"
     },
+
     about: {
         header: "About Me!",
         content: "I'm Awesome!!"
+    },
+
+    data: {
+        users: [
+            {
+                name: "Mohammed Siddeeq",
+                phone: "317-828-8931"
+            },
+            {
+                name: "Maliyah Siddeeq",
+                phone: "317-828-8900"
+            },
+            {
+                name: "Nasir Siddeeq",
+                phone: "317-828-8911"
+            }
+        ]
     }
 };
 
