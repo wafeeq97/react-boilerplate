@@ -13,13 +13,17 @@ var CONFIG = {
             {
                 text: "About",
                 route: "about"
+            },
+            {
+                text: "Contact",
+                route: "contact"
             }
         ]
     },
-    
+
     home: {
         header: "Hello World!",
-        content: "This is Mo's World!"
+        content: "This is my World!"
     },
 
     about: {
@@ -27,19 +31,25 @@ var CONFIG = {
         content: "I'm Awesome!!"
     },
 
-    data: {
-        users: [
+    contact: {
+        header: "Contacts",
+        content: "I'll have the butter biscuits.",
+        contacts: [
             {
                 name: "Mohammed Siddeeq",
                 phone: "317-828-8931"
             },
             {
-                name: "Maliyah Siddeeq",
-                phone: "317-828-8900"
+                name: "Wafeeq Mujahid",
+                phone: "404-455-6676"
             },
             {
-                name: "Nasir Siddeeq",
+                name: "Thakir Berhane",
                 phone: "317-828-8911"
+            },
+            {
+                name: "Qadree Mujahid",
+                phone: "404-360-4154"
             }
         ]
     }
